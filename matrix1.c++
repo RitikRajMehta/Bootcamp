@@ -1,5 +1,5 @@
 #include<iostream>
-Using namespace std;
+using namespace std;
 int main(){
     int rows,cols;
     cin>>rows>>cols;
