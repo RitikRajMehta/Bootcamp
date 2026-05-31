@@ -4,18 +4,11 @@ public class Replace{
         Scanner sc = new Scanner(System.in);
 
         String str = sc.nextLine();
-        char oldChar = sc.next().charAt(0);
-        char newChar = sc.next().charAt(0);
+        String str1 = sc.nextLine();
 
-        String res = "";
-        for(int i=0;i<str.length();i++){
-            char ch = str.charAt(i);
-            if(ch == oldChar){
-                res = res + newChar;
-            } else {
-                res = res + ch;
-            }
-        }
-        System.out.println(res);
+        char replace = sc.next().charAt(0);
+
+        String result = str.replace(str1, String.valueOf(replace));
+        System.out.println(result);
     }
 }
